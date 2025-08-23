@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" role="img" aria-label="Certificate Placeholder">
+  <defs>
+    <!-- 颜色主题 -->
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f6f8"/>
+      <stop offset="1" stop-color="#eef1f4"/>
+    </linearGradient>
+    <!-- 细格纹 -->
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0v16" fill="none" stroke="#e6e9ee" stroke-width="1"/>
+    </pattern>
+    <clipPath id="r">
+      <rect x="8" y="8" width="404" height="264" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- 背景卡片 -->
+  <rect x="8" y="8" width="404" height="264" rx="14" ry="14" fill="url(#g)" stroke="#dfe3e8"/>
+  <rect x="8" y="8" width="404" height="264" rx="14" ry="14" fill="url(#grid)" opacity="0.35" clip-path="url(#r)"/>
+
+  <!-- 中央图标（证书 + 丝带） -->
+  <g transform="translate(210 128)">
+    <!-- 证书纸张 -->
+    <rect x="-48" y="-48" width="96" height="96" rx="8" fill="#ffffff" stroke="#c9d2dc"/>
+    <rect x="-38" y="-30" width="76" height="10" rx="5" fill="#e9eef4"/>
+    <rect x="-38" y="-14" width="76" height="10" rx="5" fill="#e9eef4"/>
+    <rect x="-38" y="2" width="52" height="10" rx="5" fill="#e9eef4"/>
+    <!-- 丝带章 -->
+    <circle cx="14" cy="-26" r="13" fill="#e8f0ff" stroke="#9fb9ff"/>
+    <path d="M14 -12 l10 14 -10 -5 -10 5 10 -14z" fill="#9fb9ff" opacity="0.9"/>
+  </g>
+
+  <!-- 底部横条装饰 -->
+  <rect x="8" y="230" width="404" height="42" rx="0 0 14 14" fill="#f7f9fb" opacity="0.85"/>
+  <line x1="8" y1="230" x2="412" y2="230" stroke="#e3e7ee"/>
+
+  <!-- 文本 -->
+  <g fill="#77818c" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="210" y="210" font-size="16" font-weight="600" letter-spacing=".12em">CERTIFICATE</text>
+    <text x="210" y="250" font-size="12" opacity="0.9">No Image</text>
+  </g>
+
+  <!-- 轻微阴影 -->
+  <rect x="8" y="8" width="404" height="264" rx="14" ry="14" fill="none" stroke="rgba(0,0,0,0.04)"/>
+</svg>
