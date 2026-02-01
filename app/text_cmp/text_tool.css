@@ -199,6 +199,78 @@
   padding: 20px;
 }
 
+
+/* 图片上传区域样式 - 用于sdr2hdr等图片工具 */
+#content .text-tools-image-box {
+  min-height: 180px;
+  margin-top: 12px;
+}
+
+#content .text-tools-upload-trigger {
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+#content .text-tools-upload-trigger:hover {
+  border-color: var(--tools-primary);
+}
+
+#content .text-tools-upload-hint {
+  color: var(--tools-muted);
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+#content .text-tools-image-box img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0 0;
+  border-radius: 6px;
+}
+
+#content .text-tools-placeholder,
+#content .text-tools-loading {
+  margin-top: 10px;
+  color: var(--tools-muted);
+  font-size: 15px;
+  font-style: italic;
+}
+
+#content .text-tools-output-controls {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--tools-border);
+}
+
+#content .text-tools-hidden {
+  display: none;
+}
+
+/* 单选按钮组样式 */
+#content .text-tools-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 10px 0 0;
+}
+
+#content .text-tools-radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--tools-text);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#content .text-tools-radio-label input {
+  margin: 0;
+}
+
 /* 与 difflib 的表格样式兼容 */
 #content .text-tools-diff-content table.diff {
   width: 100%;
