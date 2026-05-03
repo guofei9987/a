@@ -364,3 +364,111 @@
     gap: 12px;
   }
 }
+
+
+
+
+/* ==========================================================================
+   Module: Image Tool Styles (used by hide_as_img.html, mirage_tank.html)
+   ========================================================================== */
+
+#content .text-tools-image-stage {
+  min-height: 280px;
+  margin-top: 12px;
+  padding: 22px;
+  border: 2px dashed var(--tools-border);
+  border-radius: 8px;
+  background: var(--tools-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#content .text-tools-image-stage img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 430px;
+  margin: 0;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* 图片展示区域的变体 - 用于预览区域 */
+#content .text-tools-image-stage-large {
+  min-height: 340px;
+  padding: 36px;
+}
+
+
+/* ==========================================================================
+   Module: Form Input Styles
+   ========================================================================== */
+
+#content .text-tools-input {
+  padding: 7px 10px;
+  color: var(--tools-text);
+  border: 1px solid var(--tools-border);
+  border-radius: 6px;
+  background: var(--tools-panel);
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+#content .text-tools-input:focus {
+  outline: none;
+  border-color: var(--tools-primary);
+}
+
+/* 输入框尺寸变体 */
+#content .text-tools-input-small {
+  width: 92px;
+}
+
+#content .text-tools-input-medium {
+  width: 160px;
+}
+
+
+/* ==========================================================================
+   Module: Meta Information Styles
+   ========================================================================== */
+
+#content .text-tools-meta {
+  width: 100%;
+  color: var(--tools-text);
+  text-align: left;
+  word-break: break-word;
+}
+
+#content .text-tools-meta-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+#content .text-tools-meta-detail {
+  color: var(--tools-muted);
+  font-size: 14px;
+}
+
+
+/* ==========================================================================
+   Module: Action Buttons Area Styles
+   ========================================================================== */
+
+#content .text-tools-actions {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--tools-border);
+}
+
+
+/* ==========================================================================
+   Module: Image Filter Styles
+   ========================================================================== */
+
+#content .text-tools-grayscale {
+  filter: grayscale(1);
+}
